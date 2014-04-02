@@ -14,29 +14,45 @@
 
 
 // Elementos generales
+
+a {
+	color:@white;
+}
+
 .white {
 	color:@white;
 }
 
 .bck-green {
 	background-color: @green;
+	margin-right: 305px;
+    padding: 5px 10px;
 }
 
 .center {
 	text-align: center;
 }
 
+.inner-top {
+	padding: 200px 0;
+}
+
 .inner {
-	padding: 80px 0;
+	padding: 150px 0;
 }
 
 // Headings
 
-h1 {
+h2 {
 	font-family: @proxima;
-	font-size: 60px;
+	font-size: 70px;
 	color: @white;
 	font-weight: bold;
+}
+
+.titular-up{
+	font-family: @myriad;
+	font-weight: 200;
 }
 
 
@@ -49,6 +65,7 @@ text-align: center;
 margin: 35px;
 }
 
+
 .item-down {
 	text-transform: uppercase;
 	font-size: 16px;
@@ -59,9 +76,28 @@ margin: 35px;
 }
 
 
+.nav li a {
+	padding: 0;
+}
+
+.logo-wrapper {
+	padding-top: 25px;
+}
+
+
 // Estilos generales
+.texto-home-wrapper {
+	background: fade(@black, 50%);
+	padding: 30px 20px;
+	margin: 0 350px 20px 0;
+}
 
+.texto-home {
+font-family: @proxima;
+ font-size: 19px;
+  font-weight: 500;
 
+}
 
 // Secciones
 
@@ -89,9 +125,8 @@ section {
     background-color: rgba(48, 36, 20, 0.4);
 }
 
-
 .menu-lateral {
-height: 717px;
+ height: 717px;
  border: 1px dotted #ccc;
  background-color: rgba(48, 36, 20, 0.4);
 }
