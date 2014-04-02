@@ -5963,10 +5963,23 @@ td.visible-print {
 .center {
   text-align: center;
 }
+.inner {
+  padding: 80px 0;
+}
 h1 {
   font-family: "proxima-nova", sans-serif;
   font-size: 60px;
   color: #ffffff;
+  font-weight: bold;
+}
+.menu-item {
+  font-family: "proxima-nova", sans-serif;
+  color: #ffffff;
+  text-align: center;
+  margin: 20px;
+}
+.item-down {
+  text-transform: uppercase;
   font-weight: bold;
 }
 .menu {
@@ -5979,5 +5992,15 @@ h1 {
 }
 section {
   min-height: 750px;
+}
+.lateral {
+  float: right;
+  height: 717px;
+  position: fixed;
+  right: 0;
+  width: 200px;
+  border: 1px dotted #ccc;
+  margin: 18px 18px 0 0;
+  background-color: rgba(48, 36, 20, 0.4);
 }
 /*# sourceMappingURL=/styles/main.css.map */
