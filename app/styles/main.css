@@ -6039,6 +6039,11 @@ h2 {
   background-size: cover;
   background-position: 50% 50%;
 }
+.seccion-gerente {
+  background-image: url("../images/dos.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
 section {
   min-height: 750px;
 }
