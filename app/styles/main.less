@@ -42,6 +42,26 @@ a {
 	padding: 150px 0;
 }
 
+
+// Margins
+
+.ml90 {
+	margin-left: 90px;
+	margin-top: -2px;
+}
+
+.mt60 {
+	margin-top: 60px;
+}
+
+.margin-35 {
+margin: 0 350px 20px 0;	
+}
+
+.mt20 {
+	margin-top: 20px;
+}
+
 // Headings
 
 h2 {
@@ -49,6 +69,14 @@ h2 {
 	font-size: 70px;
 	color: @white;
 	font-weight: bold;
+}
+
+h3 {
+	font-family: @myriad;
+	background-color: @red;
+	color: @white;
+	padding: 3px 10px;
+	text-align: right;
 }
 
 .titular-up{
@@ -76,7 +104,6 @@ margin: 35px;
 	background-color: @red;
 }
 
-
 .nav li a {
 	padding: 0;
 }
@@ -86,32 +113,34 @@ margin: 35px;
 }
 
 
-// Estilos generales
-.texto-home-wrapper {
-	background: fade(@black, 50%);
-	padding: 30px 20px;
-	margin: 0 350px 20px 0;
-}
-
-.texto-home {
-font-family: @proxima;
- font-size: 19px;
-  font-weight: 500;
-
+// Menu lateral
+.lateral {
+    height: 717px;
+    position: fixed;
+    right: 0;
+    width: 200px;
+    margin: 18px 18px 0 0;
+    background: url("../images/menu-lateral.png") no-repeat 50% 50%;
+    background-size: cover;  
 }
 
 // Secciones
 
-.seccion-inicial {
-	background-image: url("../images/uno.jpg");
+.seccion {
 	background-size: cover;
 	background-position: 50% 50%;
 }
 
-.seccion-gerente {
+.inicial {
+	background-image: url("../images/uno.jpg");
+}
+
+.gerente {
 	background-image: url("../images/dos.jpg");
-	background-size: cover;
-	background-position: 50% 50%;
+}
+
+.logros {
+	background-image: url("../images/tres.jpg");
 }
 
 // Ancho temporal de una seccion para visualizacion del diseño, no se utilizará 
@@ -121,20 +150,43 @@ section {
 }
 
 
-.lateral {
-    height: 717px;
-    position: fixed;
-    right: 0;
-    width: 200px;
-    margin: 18px 18px 0 0;
-    background: url("../images/menu-lateral.png") no-repeat 50% 50%;
-    background-size: cover;
-    
+// Estilos generales
+.texto-wrapper {
+	background: fade(@black, 50%);
+	padding: 30px 20px;
+}
+.texto-home {
+ 	font-family: @proxima;
+	font-size: 19px;
+ 	font-weight: 500;
 }
 
-.menu-lateral {
- height: 717px;
- border: 1px dotted #ccc;
- background-color: rgba(48, 36, 20, 0.4);
+.uppercase {
+	text-transform: uppercase;
 }
 
+.texto-gerente-wrapper {
+background-color: @white;
+padding: 30px 20px;
+}
+
+.gerente-texto
+{
+color: @black;
+font-family: @myriad;
+}
+
+.destacado-gerente {
+	font-family: @proxima;
+	color: @white;
+	text-transform: uppercase;
+	font-size: 25px;
+}
+
+.titular-wrapper{
+	border-top: 1px solid @black;
+}
+
+.border-black{
+	border-top: 1px solid @black;
+}
