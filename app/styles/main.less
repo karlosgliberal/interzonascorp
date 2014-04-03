@@ -2,45 +2,132 @@
 @icon-font-path: "../fonts/glyphicons/";
 
 // Colores
-@red: #F20D1D;
+@red: #E60F1F;
 @green: #66B017;
 @white: #ffffff;
 @black: #000;
 
 
 // Tipografías
-// font-family: "proxima-nova",sans-serif;
-// font-family: "myriad-pro",sans-serif;
+@proxima: "proxima-nova",sans-serif ;
+@myriad: "myriad-pro",sans-serif ;
 
 
 // Elementos generales
+
+a {
+	color:@white;
+}
+
 .white {
 	color:@white;
 }
 
 .bck-green {
 	background-color: @green;
+	margin-right: 305px;
+    padding: 5px 10px;
 }
 
-h1 {
-	font-family: "proxima-nova",sans-serif;
-	font-size: 60px;
+.center {
+	text-align: center;
+}
+
+.inner-top {
+	padding: 200px 0;
+}
+
+.inner {
+	padding: 150px 0;
+}
+
+// Headings
+
+h2 {
+	font-family: @proxima;
+	font-size: 70px;
 	color: @white;
 	font-weight: bold;
 }
 
-// Estilos generales
+.titular-up{
+	font-family: @myriad;
+	font-weight: 200;
+}
+
+
+// Menu
+
+.menu-item {
+font-family: @proxima;
+color: @white;
+text-align: center;
+margin: 35px;
+}
+
+
+.item-down {
+	text-transform: uppercase;
+	font-size: 16px;
+}
 
 .menu {
 	background-color: @red;
 }
 
+
+.nav li a {
+	padding: 0;
+}
+
+.logo-wrapper {
+	padding-top: 25px;
+}
+
+
+// Estilos generales
+.texto-home-wrapper {
+	background: fade(@black, 50%);
+	padding: 30px 20px;
+	margin: 0 350px 20px 0;
+}
+
+.texto-home {
+font-family: @proxima;
+ font-size: 19px;
+  font-weight: 500;
+
+}
+
 // Secciones
 
-.seccion-principal {
+.seccion-inicial {
 	background-image: url("../images/uno.jpg");
 	background-size: cover;
 	background-position: 50% 50%;
 }
 
+// Ancho temporal de una seccion para visualizacion del diseño, no se utilizará 
+// mas adelante
+section {
+	min-height: 750px;
+}
+
+
+.lateral {
+    height: 717px;
+    position: fixed;
+    right: 0;
+    width: 200px;
+    margin: 18px 18px 0 0;
+    background: url("../images/menu-lateral.png") no-repeat 50% 50%;
+    background-size: cover;
+    
+}
+
+.menu-lateral {
+ height: 717px;
+ border: 1px dotted #ccc;
+ background-color: rgba(48, 36, 20, 0.4);
+}
 
