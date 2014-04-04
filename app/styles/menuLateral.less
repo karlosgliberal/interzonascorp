@@ -1,32 +1,73 @@
-@defaultRadius:30px;
- 
+@defaultRadius:80px;
+@defaultHeight:31px;
+@defaultWidth:31px;
+@defaultMargenCirulo: 5px; 
 .RoundedShape(@radius:@defaultRadius){
     -webkit-border-radius:@radius;
        -moz-border-radius:@radius;
             border-radius:@radius;  
 }
 
+.Circulos(@height:@defaultHeight,@width:@defaultWidth, @margeCiruclo:@defaultMargenCirulo){
+  background: fade(@white, 50%);
+  height: @height;
+  width: @width;
+  .RoundedShape(@defaultRadius);
+  box-shadow: 
+    inset 0 0 0 @margeCiruclo rgba(0,0,0,0.5), 0 5px 5px rgba(0,0,0,0);
+   -webkit-transform: scale(1);
+  border: 1px solid rgba(255,255,255,0.4);
+}
+
 .circulo{
-   background-color: @green;
-   margin-top: 100px;
-   height: 25px;
-   width: 25px;
-     .RoundedShape(75px);
-     box-shadow: 
-      inset 0 0 0 3px rgba(0,0,0,0.6),
-      0 5px 5px rgba(0,0,0,0.3);
-    -webkit-transform: scale(1);
+  .Circulos();
+}
+
+.circulo-peque{
+  .Circulos(21px, 21px, 4px);
 }
 
 .circulo-efecto{
   -webkit-transition: all 0.4s ease-in-out;
   -webkit-transform: scale(2);
-  background-color: #E60F1F;
 }
 
-
 .carta-item {
+  position: absolute;
+  top: 128px;
+  left:51px;
+}
+
+.logros-item {
+  position: absolute;
+  top: 189px;
+  left:86px;
+}
+
+.valor-item {
+  position: absolute;
+  top: 272px;
+  left:89px;
+}
+
+.indicadores-item {
+  position: absolute;
+  top: 682px;
+  left:61px;
+}
+
+.consejo-item {
+  position: absolute;
+  top: 350px;
+  left:100px;
+}
+
+.lateral-texto{
   position: relative;
-  top: 34px;
-  left: 48px;
+  top: -30px;
+  left: 40px;
+  opacity:0.5;
+}
+
+.punto{
 }
