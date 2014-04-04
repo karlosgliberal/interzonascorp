@@ -1,7 +1,7 @@
 $(document).ready(function(){
-  $('.uno').waypoint(function(direction) {
-    $('.lateral > div').removeClass('circuloEfecto');
-    $('.uno').addClass('circuloEfecto');
+  $('.carta-item').waypoint(function(direction) {
+    $('.lateral > div').removeClass('circulo-efecto');
+    $('.carta-item').addClass('circulo-efecto');
   }); 
   $('.dos').waypoint(function(direction) {
     $('.lateral > div').removeClass('circuloEfecto');
