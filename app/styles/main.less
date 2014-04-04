@@ -43,8 +43,13 @@ a {
 	padding: 150px 0;
 }
 
+.round{
+    -webkit-border-radius:9999px;
+       -moz-border-radius:9999px;
+            border-radius:9999px;  
+}
 
-// Margins
+// Margins y paddings
 
 .ml90 {
 	margin-left: 90px;
@@ -61,6 +66,18 @@ margin: 0 350px 20px 0;
 
 .mt20 {
 	margin-top: 20px;
+}
+
+.pt10 {
+	padding-top: 10px;
+}
+
+.pt20 {
+	padding-top: 20px;
+}
+
+.pt30 {
+	padding-top: 30px;
 }
 
 // Headings
@@ -191,3 +208,75 @@ font-family: @myriad;
 .border-black{
 	border-top: 1px solid @black;
 }
+
+// Circulos
+
+
+.numero-high {
+font-family: @proxima;
+font-weight: bold;
+font-size: 90px;
+margin:0;
+line-height: 0.8;
+padding-top: 19px;
+}
+
+.numero-mediun {
+font-family: @proxima;
+font-weight: bold;
+font-size: 60px;
+margin: 0;
+line-height: 0.8;
+padding-top: 31px;
+}
+
+
+.circle-mediun {
+	.round;
+	width: 150px;
+	height: 150px;
+}
+
+.circle-large {
+	.round;
+	width: 200px;
+	height: 200px;
+}
+
+.circle-small {
+	.round;
+	width: 80px;
+	height: 80px;
+}
+
+
+.t-verde {
+	background: fade(@green, 50%);
+}
+
+.t-white {
+	background: fade(@white, 50%);
+}
+
+
+.texto-circulo {
+	font-family: @myriad;
+	font-weight: 200;
+		&.large {
+			padding: 0 29px;
+			font-size: 17px;
+		}
+		&.mediun {
+			padding: 0 10px;
+			font-size: 13px;
+		}
+		&.small {
+			padding: 0 5px;
+			font-size: 10px;
+		}
+}
+
+
+
+
+
