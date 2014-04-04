@@ -5995,11 +5995,31 @@ a {
 .inner {
   padding: 150px 0;
 }
+.ml90 {
+  margin-left: 90px;
+  margin-top: -2px;
+}
+.mt60 {
+  margin-top: 60px;
+}
+.margin-35 {
+  margin: 0 350px 20px 0;
+}
+.mt20 {
+  margin-top: 20px;
+}
 h2 {
   font-family: "proxima-nova", sans-serif;
   font-size: 70px;
   color: #ffffff;
   font-weight: bold;
+}
+h3 {
+  font-family: "myriad-pro", sans-serif;
+  background-color: #e60f1f;
+  color: #ffffff;
+  padding: 3px 10px;
+  text-align: right;
 }
 .titular-up {
   font-family: "myriad-pro", sans-serif;
@@ -6024,29 +6044,6 @@ h2 {
 .logo-wrapper {
   padding-top: 25px;
 }
-.texto-home-wrapper {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 30px 20px;
-  margin: 0 350px 20px 0;
-}
-.texto-home {
-  font-family: "proxima-nova", sans-serif;
-  font-size: 19px;
-  font-weight: 500;
-}
-.seccion-inicial {
-  background-image: url("../images/uno.jpg");
-  background-size: cover;
-  background-position: 50% 50%;
-}
-.seccion-gerente {
-  background-image: url("../images/dos.jpg");
-  background-size: cover;
-  background-position: 50% 50%;
-}
-section {
-  min-height: 750px;
-}
 .lateral {
   height: 717px;
   position: fixed;
@@ -6056,9 +6053,52 @@ section {
   background: url("../images/menu-lateral.png") no-repeat 50% 50%;
   background-size: cover;
 }
-.menu-lateral {
-  height: 717px;
-  border: 1px dotted #ccc;
-  background-color: rgba(48, 36, 20, 0.4);
+.seccion {
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.inicial {
+  background-image: url("../images/uno.jpg");
+}
+.gerente {
+  background-image: url("../images/dos.jpg");
+}
+.logros {
+  background-image: url("../images/tres.jpg");
+}
+section {
+  min-height: 750px;
+}
+.texto-wrapper {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px 20px;
+}
+.texto-home {
+  font-family: "proxima-nova", sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.texto-gerente-wrapper {
+  background-color: #ffffff;
+  padding: 30px 20px;
+}
+.gerente-texto {
+  color: #000000;
+  font-family: "myriad-pro", sans-serif;
+}
+.destacado-gerente {
+  font-family: "proxima-nova", sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+.titular-wrapper {
+  border-top: 1px solid #000000;
+}
+.border-black {
+  border-top: 1px solid #000000;
 }
 /*# sourceMappingURL=/styles/main.css.map */
