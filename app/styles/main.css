@@ -5954,6 +5954,8 @@ td.visible-print {
     display: none !important;
   }
 }
+<<<<<<< HEAD
+=======
 .circulo {
   background-color: #66b017;
   margin-top: 100px;
@@ -5975,6 +5977,7 @@ td.visible-print {
   top: 34px;
   left: 48px;
 }
+>>>>>>> 50714f62e5f39360ceb6d8425f3fdb5daf02d3d2
 a {
   color: #ffffff;
 }
@@ -6044,6 +6047,10 @@ h3 {
 .logo-wrapper {
   padding-top: 25px;
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> ac4f7063a9cf4fee790043c92e78e9ea571c5589
 .lateral {
   height: 717px;
   position: fixed;
@@ -6053,6 +6060,7 @@ h3 {
   background: url("../images/menu-lateral.png") no-repeat 50% 50%;
   background-size: cover;
 }
+<<<<<<< HEAD
 .seccion {
   background-size: cover;
   background-position: 50% 50%;
@@ -6072,28 +6080,84 @@ section {
 .texto-wrapper {
   background: rgba(0, 0, 0, 0.5);
   padding: 30px 20px;
+=======
+.texto-wrapper {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px 20px;
+}
+.margin-35 {
+=======
+.texto-home-wrapper {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px 20px;
+>>>>>>> 50714f62e5f39360ceb6d8425f3fdb5daf02d3d2
+  margin: 0 350px 20px 0;
+>>>>>>> ac4f7063a9cf4fee790043c92e78e9ea571c5589
 }
 .texto-home {
   font-family: "proxima-nova", sans-serif;
   font-size: 19px;
   font-weight: 500;
 }
+<<<<<<< HEAD
 .uppercase {
   text-transform: uppercase;
 }
 .texto-gerente-wrapper {
   background-color: #ffffff;
   padding: 30px 20px;
+=======
+<<<<<<< HEAD
+.uppercase {
+  text-transform: uppercase;
+}
+.seccion {
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.inicial {
+  background-image: url("../images/uno.jpg");
+}
+.gerente {
+  background-image: url("../images/dos.jpg");
+}
+.logros {
+  background-image: url("../images/tres.jpg");
+=======
+.seccion-inicial {
+  background-image: url("../images/uno.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.seccion-gerente {
+  background-image: url("../images/dos.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+>>>>>>> 50714f62e5f39360ceb6d8425f3fdb5daf02d3d2
+>>>>>>> ac4f7063a9cf4fee790043c92e78e9ea571c5589
 }
 .gerente-texto {
   color: #000000;
   font-family: "myriad-pro", sans-serif;
 }
+<<<<<<< HEAD
 .destacado-gerente {
   font-family: "proxima-nova", sans-serif;
   color: #ffffff;
   text-transform: uppercase;
   font-size: 25px;
+=======
+<<<<<<< HEAD
+=======
+.lateral {
+  height: 717px;
+  position: fixed;
+  right: 0;
+  width: 200px;
+  margin: 18px 18px 0 0;
+  background: url("../images/menu-lateral.png") no-repeat 50% 50%;
+  background-size: cover;
+>>>>>>> ac4f7063a9cf4fee790043c92e78e9ea571c5589
 }
 .titular-wrapper {
   border-top: 1px solid #000000;
@@ -6101,4 +6165,5 @@ section {
 .border-black {
   border-top: 1px solid #000000;
 }
+>>>>>>> 50714f62e5f39360ceb6d8425f3fdb5daf02d3d2
 /*# sourceMappingURL=/styles/main.css.map */
