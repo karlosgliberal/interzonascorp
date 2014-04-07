@@ -19,11 +19,6 @@
   border: 1px solid rgba(255,255,255,0.4);
 }
 
-.efecto{
-  -webkit-transition: all 0.4s ease-in-out;
-  -webkit-transform: scale(2);
-}
-
 // Menu lateral
 .lateral {
   height: 720px;
@@ -34,17 +29,25 @@
   background: url("../images/menu-lateral.png") no-repeat 0% -6%;
 }
 
+.circulo-efecto{
+  height: 31px;
+  width: 31px;
+  .RoundedShape(@defaultRadius);
+  -webkit-transition: all 0.5s ease-in-out;
+  -webkit-transform: scale(1.2); 
+  background: fadein(@red, 75%);
+  border: 1px solid rgba(255,255,255,100%);
+    
+}
+
+//inset 0 0 35px 35px transparent, 0 0 75px 50px transparent
+
 .circulo{
   .Circulos();
 }
 
 .circulo-peque{
   .Circulos(21px, 21px, 4px);
-}
-
-.circulo-efecto{
-  -webkit-transition: all 0.4s ease-in-out;
-  -webkit-transform: scale(2);
 }
 
 .carta-item {
