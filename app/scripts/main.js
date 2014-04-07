@@ -1,7 +1,7 @@
 $(document).ready(function(){
-  $('.cart-item').waypoint(function(direction) {
-    $('.lateral > div').removeClass('circulo-efecto');
-    $('.cart-item').addClass('circulo-efecto');
+  $('.carta-item').waypoint(function(direction) {
+    // $('#movida').removeClass('circulo');
+    $('#movida').addClass('efecto');
   }); 
   $('.dos').waypoint(function(direction) {
     $('.lateral > div').removeClass('circuloEfecto');
