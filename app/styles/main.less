@@ -79,6 +79,10 @@ margin: 0 350px 20px 0;
 	margin-top: 20px;
 }
 
+.mt30 {
+	margin-top: 20px;
+}
+
 .pt10 {
 	padding-top: 10px;
 }
@@ -213,14 +217,13 @@ font-family: @myriad;
 
 // Circulos
 
-
 .numero-high {
 font-family: @proxima;
 font-weight: bold;
 font-size: 90px;
 margin:0;
 line-height: 0.8;
-padding-top: 19px;
+
 }
 
 .numero-mediun {
@@ -229,9 +232,15 @@ font-weight: bold;
 font-size: 60px;
 margin: 0;
 line-height: 0.8;
-padding-top: 31px;
 }
 
+.numero-small {
+font-family: @proxima;
+font-weight: bold;
+font-size: 30px;
+margin: 0;
+line-height: 0.8;
+}
 
 .circle-mediun {
 	.round;
@@ -243,7 +252,18 @@ padding-top: 31px;
 	.round;
 	width: 200px;
 	height: 200px;
+
 }
+
+.circle-extra-large {
+	.round;
+	width: 240px;
+	height: 240px;
+	.circle-box {
+		padding: 40px 15px;
+	}	
+}
+
 
 .circle-small {
 	.round;
@@ -252,12 +272,13 @@ padding-top: 31px;
 }
 
 
+
 .t-verde {
-	background: fade(@green, 50%);
+	background: fade(@green, 80%);
 }
 
 .t-white {
-	background: fade(@white, 50%);
+	background: fade(@white, 80%);
 }
 
 
@@ -265,19 +286,77 @@ padding-top: 31px;
 	font-family: @myriad;
 	font-weight: 200;
 		&.large {
-			padding: 0 29px;
-			font-size: 17px;
+			font-size: 20px;
 		}
 		&.mediun {
-			padding: 0 10px;
 			font-size: 13px;
 		}
 		&.small {
-			padding: 0 5px;
 			font-size: 10px;
 		}
 }
 
+.c1 {
+position: relative;
+top: 200px;
+left: 0px;
+}
+
+.c2 {
+position: relative;
+top: -193px;
+left: 168px;
+}
+
+.c3 {
+position: relative;
+top: -95px;
+left: 113px;
+}
+
+.c4 {
+position: relative;
+top: 0px;
+left: 100px;
+}
+
+.c5 {
+left: 32px;
+position: relative;
+top: 233px;
+}
+
+.c6 {
+left: 210px;
+position: relative;
+top: -128px;
+}
+
+
+.c7 {
+left: -16px;
+position: relative;
+top: 289px;
+}
+
+.c8 {
+left: -38px;
+position: relative;
+top: 0;
+}
+
+
+.c9 {
+left: 218px;
+position: relative;
+top: -30px;
+}
+
+.c10 {
+left: 95px;
+position: relative;
+top: 104px;
+}
 
 
 
