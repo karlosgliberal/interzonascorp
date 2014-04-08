@@ -9,17 +9,44 @@ $(document).ready(function(){
       $(valor).removeClass('circulo-efecto-peque');
       $(valor).addClass('circulo-peque');
     });
+  };
+
+  var borrarCrearClases = function(id){
+    $(id).removeClass('circulo');
+    $(id).addClass('circulo-efecto');
   }
+
+  var sistemaWaypoint = function(id, elemento, peque){
+    elemento.waypoint(function(direction) {
+      if (direction === 'down') {
+          borrarEfecto();
+          borrarCrearClases(id);
+      }
+      },{
+        offset: '15%'
+    });
+
+    elemento.waypoint(function(direction) {
+        if (direction === 'up') {
+          borrarEfecto();
+          borrarCrearClases(id);
+        }
+      },{
+        offset: '-60%'
+    });
+  };
 
   $('#principal').waypoint(function(direction) {
     borrarEfecto();
-  },{ offset: '-400'});
+  },{ offset: '-60%'});
 
-  $('#carta-gerente').waypoint(function(direction) {
-    borrarEfecto();
-    $('#carta').removeClass('circulo');
-    $('#carta').addClass('circulo-efecto');
-  }, {offset: '40%'});
+
+  var $cartaGerente = $('#carta-gerente');
+  var idCirculo = '#carta'
+  sistemaWaypoint(idCirculo, $cartaGerente);
+
+
+
 
   $('#principales-logros').waypoint(function(direction) {
     borrarEfecto();
