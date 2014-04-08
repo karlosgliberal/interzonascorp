@@ -5,39 +5,79 @@ $(document).ready(function(){
       $(valor).removeClass('circulo-efecto');
       $(valor).addClass('circulo');
     });
+
     $('.circulo-efecto-peque').each(function(index, valor){
       $(valor).removeClass('circulo-efecto-peque');
       $(valor).addClass('circulo-peque');
     });
+  };
+
+  var borrarCrearClases = function(id, peque){
+    $(id).removeClass('circulo'+peque);
+    $(id).addClass('circulo-efecto'+peque);
   }
+
+  var sistemaWaypoint = function(id, elemento, peque){
+    elemento.waypoint(function(direction) {
+      if (direction === 'down') {
+          borrarEfecto();
+          borrarCrearClases(id, peque);
+      }
+      },{
+        offset: '0'
+    });
+
+    elemento.waypoint(function(direction) {
+        if (direction === 'up') {
+          borrarEfecto();
+          borrarCrearClases(id, peque);
+        }
+      },{
+        offset: '0'
+    });
+  };
+
+  var peque = '';
+
 
   $('#principal').waypoint(function(direction) {
     borrarEfecto();
-  },{ offset: '-400'});
+  },{ offset: '0'});
 
-  $('#carta-gerente').waypoint(function(direction) {
-    borrarEfecto();
-    $('#carta').removeClass('circulo');
-    $('#carta').addClass('circulo-efecto');
-  }, {offset: '40%'});
+  var $cartaGerente = $('#carta-gerente');
+  var idCirculo = '#carta';
+  sistemaWaypoint(idCirculo, $cartaGerente, peque);
 
-  $('#principales-logros').waypoint(function(direction) {
-    borrarEfecto();
-    $('#logros').removeClass('circulo');
-    $('#logros').addClass('circulo-efecto');
-  });
+  var $principalesLogros = $('#principales-logros');
+  var idCirculo = '#logros';
+  sistemaWaypoint(idCirculo, $principalesLogros, peque);
 
-  $('#valor-bienestar').waypoint(function(direction) {
-    borrarEfecto();
-    $('#valor').removeClass('circulo');
-    $('#valor').addClass('circulo-efecto');
-  });
+  var $valorBienestar = $('#valor-bienestar');
+  var idValor = '#valor';
+  sistemaWaypoint(idValor, $valorBienestar, peque);
 
-  $('#radio-saludable').waypoint(function(direction) {
-    borrarEfecto();
-    $('#consejo').removeClass('circulo-peque');
-    $('#consejo').addClass('circulo-efecto-peque');
-  });
+  var $radioSaludable = $('#radio-saludable');
+  var idCirculo = '#consejo';
+  peque = '-peque';
+  sistemaWaypoint(idCirculo, $radioSaludable, peque);
+
+  // $('#principales-logros').waypoint(function(direction) {
+  //   borrarEfecto();
+  //   $('#logros').removeClass('circulo');
+  //   $('#logros').addClass('circulo-efecto');
+  // });
+
+  // $('#valor-bienestar').waypoint(function(direction) {
+  //   borrarEfecto();
+  //   $('#valor').removeClass('circulo');
+  //   $('#valor').addClass('circulo-efecto');
+  // });
+
+  // $('#radio-saludable').waypoint(function(direction) {
+  //   borrarEfecto();
+  //   $('#consejo').removeClass('circulo-peque');
+  //   $('#consejo').addClass('circulo-efecto-peque');
+  // });
 
   $('#proyecto-bdp').waypoint(function(direction) {
     borrarEfecto();
