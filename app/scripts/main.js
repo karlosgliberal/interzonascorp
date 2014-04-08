@@ -1,8 +1,5 @@
 $(document).ready(function(){
-  var borrarClase = function(element){
-    console.log('movida');
-    // $(element).removeClass('circulo');
-    // $(element).addClass('circulo-efecto');
+  var borrarClase = function(){
     $('.circulo-efecto').each(function(index, valor){
       $(valor).removeClass('circulo-efecto');
       $(valor).addClass('circulo');
@@ -11,9 +8,7 @@ $(document).ready(function(){
 
   $('#principal').waypoint(function(direction) {
     borrarClase();
-    // $('#carta').removeClass('circulo-efecto');
-    // $('#carta').addClass('circulo');
-  });
+  },{ offset: '-400'});
 
   $('#carta-gerente').waypoint(function(direction) {
     borrarClase();
@@ -25,6 +20,12 @@ $(document).ready(function(){
     borrarClase();
     $('#logros').removeClass('circulo');
     $('#logros').addClass('circulo-efecto');
+  });
+
+  $('#valor-bienestar').waypoint(function(direction) {
+    borrarClase();
+    $('#valor').removeClass('circulo');
+    $('#valor').addClass('circulo-efecto');
   });
 
   // $('.tres').waypoint(function(direction) {
