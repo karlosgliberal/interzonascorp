@@ -19,6 +19,7 @@ $(document).ready(function(){
 
   var sistemaWaypoint = function(id, elemento, peque){
     elemento.waypoint(function(direction) {
+        console.log('movida');
       if (direction === 'down') {
           borrarEfecto();
           borrarCrearClases(id, peque);
@@ -69,6 +70,7 @@ $(document).ready(function(){
   var idCirculo = '#blanco';
   peque = '-peque';
   sistemaWaypoint(idCirculo, $blancoRojo, peque);
+
 
   // $('#principales-logros').waypoint(function(direction) {
   //   borrarEfecto();
