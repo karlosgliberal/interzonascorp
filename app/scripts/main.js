@@ -9,7 +9,7 @@ $(function() {
       if (target.length) {
         $('html,body').animate({
           scrollTop: target.offset().top-51
-        }, 1500, "easeOutBack");
+        }, 1500, "swing");
         page(target.selector);
         return false;
       }
@@ -46,7 +46,7 @@ $(document).ready(function(){
           borrarCrearClases(id, peque);
       }
       },{
-        offset: '30%'
+        offset: '25%'
     });
 
     elemento.waypoint(function(direction) {
@@ -55,7 +55,9 @@ $(document).ready(function(){
           borrarCrearClases(id, peque);
         }
       },{
-        offset: '0'
+      offset: function() {
+        return $.waypoints('viewportHeight') / 2 - $(this).outerHeight()-40;
+      }
     });
   };
 
@@ -63,7 +65,11 @@ $(document).ready(function(){
 
   $('#principal').waypoint(function(direction) {
     borrarEfecto();
-  },{ offset: '30%'});
+  },{ 
+      offset: function() {
+        return $.waypoints('viewportHeight') / 2 - $(this).outerHeight()-25;
+      }
+  });
 
   var $cartaGerente = $('#carta-gerente');
   var idCirculo = '#carta';
@@ -77,12 +83,12 @@ $(document).ready(function(){
   var idValor = '#valor';
   sistemaWaypoint(idValor, $valorBienestar, peque);
 
-  var $radioSaludable = $('#radio-saludable');
+  var $radioSaludable = $('.radio-saludable-seccion');
   var idCirculo = '#consejo';
   peque = '-peque';
   sistemaWaypoint(idCirculo, $radioSaludable, peque);
 
-  var $proyectoBdp = $('#proyecto-bdp');
+  var $proyectoBdp = $('.proyecto-bdp-seccion');
   var idCirculo = '#bdp';
   peque = '-peque';
   sistemaWaypoint(idCirculo, $proyectoBdp, peque);
@@ -92,7 +98,7 @@ $(document).ready(function(){
   peque = '-peque';
   sistemaWaypoint(idCirculo, $blancoRojo, peque);
 
-  var $brigadaEmprendedores = $('#brigada-emprendedores');
+  var $brigadaEmprendedores = $('.brigada-emprededores-seccion');
   var idCirculo = '#brigada';
   peque = '-peque';
   sistemaWaypoint(idCirculo, $brigadaEmprendedores, peque);
