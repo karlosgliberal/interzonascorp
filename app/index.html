@@ -87,7 +87,7 @@
     <!--   Fin de Item -->
 
     <div class="point-wrapper indicadores-item">
-      <div class="circulo"></div>
+      <div id="indicadores" class="circulo"></div>
       <div class="lateral-texto white">
         Indicadores<br><span class="uppercase green">GR</span>
       </div>
@@ -117,25 +117,25 @@
               <li class="menu-item">
                 <ul class="nav">
                   <li class="item-up">Carta</li>
-                   <li class="item-down"><a href="/">Gerente general</a></li>
+                   <li class="item-down"><a href="#carta-gerente">Gerente general</a></li>
                 </ul>
               </li>
               <li class="menu-item">
                 <ul class="nav">
                   <li class="item-up">Resumen</li>
-                   <li class="item-down">Principales logros</li>
+                   <li class="item-down"><a href="#principales-logros">Principales logros</a></li>
                 </ul>
               </li>
               <li class="menu-item">
                  <ul class="nav">
                   <li class="item-up">La ruta del</li>
-                   <li class="item-down">Valor y bienestar</li>
+                   <li class="item-down"><a href="#valor-bienestar">Valor y bienestar</a></li>
                 </ul>
               </li>
               <li class="menu-item">
                  <ul class="nav">
                   <li class="item-up">Indicadores</li>
-                  <li class="item-down">Gri</li>
+                  <li class="item-down"><a href="#indicadores">Gri</a></li>
                 </ul>
               </li>
             </ul>
@@ -473,6 +473,7 @@
   </div>
 </section>
 <!-- fin de proyecto bdp-uno -->
+
 <section id="blanco-rojo" class="seccion blanco-rojo">
   <div class="container inner-seccion">
      <div class="row">
@@ -647,6 +648,8 @@
 
         <!-- build:js scripts/main.js -->
         <script src="bower_components/jquery/jquery.js"></script>
+        <script src="bower_components/jquery.easing/js/jquery.easing.js"></script>
+        <script src="bower_components/page/index.js"></script>
         <script src="bower_components/jquery-waypoints/waypoints.js"></script>
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
