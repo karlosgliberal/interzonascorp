@@ -23,11 +23,13 @@ $(function() {
 $(document).ready(function(){
   var borrarEfecto = function(){
     $('.circulo-efecto').each(function(index, valor){
+      $('.opacidad').css({ opacity: 0.2 });
       $(valor).removeClass('circulo-efecto');
       $(valor).addClass('circulo');
     });
 
     $('.circulo-efecto-peque').each(function(index, valor){
+      $('.opacidad').css({ opacity: 0.2 });
       $(valor).removeClass('circulo-efecto-peque');
       $(valor).addClass('circulo-peque');
     });
@@ -36,14 +38,14 @@ $(document).ready(function(){
   var borrarCrearClases = function(id, peque){
     $(id).removeClass('circulo'+peque);
     $(id).addClass('circulo-efecto'+peque);
+    $(id).next().animate({opacity:0.9}, 1000);
   }
 
   var sistemaWaypoint = function(id, elemento, peque){
     elemento.waypoint(function(direction) {
-        console.log('movida');
       if (direction === 'down') {
-          borrarEfecto();
-          borrarCrearClases(id, peque);
+        borrarEfecto();
+        borrarCrearClases(id, peque);
       }
       },{
         offset: '25%'
@@ -53,6 +55,7 @@ $(document).ready(function(){
         if (direction === 'up') {
           borrarEfecto();
           borrarCrearClases(id, peque);
+          // $('.opacidad').css({ opacity: 0.9 });
         }
       },{
       offset: function() {
