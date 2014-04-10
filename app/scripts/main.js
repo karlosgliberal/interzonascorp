@@ -8,7 +8,7 @@ $(function() {
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
         $('html,body').animate({
-          scrollTop: target.offset().top-51
+          scrollTop: target.offset().top-70
         }, 1500, "swing");
         page(target.selector);
         return false;
@@ -65,7 +65,6 @@ $(document).ready(function(){
   };
 
   var peque = '';
-
   $('#principal').waypoint(function(direction) {
     borrarEfecto();
   },{ 
