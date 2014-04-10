@@ -263,38 +263,59 @@ padding: 30px 17px;
 	font-size: 16px;
 }
 
-// .menu {
-// 	background-color: @red;
-// }
-
 .nav li a {
 	padding: 0;
 }
 
 .menu-wrapper {
 	background-color: @red;
-	padding-left: 4%;
+	
 }
 
-.logo-wrapper {
-	padding-top: 25px;
+.navbar-header-alicorp {
+	background-color: @red;
+	margin: 0 6%;
 }
 
 .navbar-nav {
-// margin: 0 10%;
-// padding: 0 1%;
 background-color: @red;
 }
 
 .icon-bar {
 	background-color: @black;
-
 }
 
 .navbar-brand {
     background-color: @red;
     padding: 23px;
 }
+
+.logo-wrapper {
+	float: left;
+	background-color: @red;
+	padding: 2% 0% 0%;
+    margin-left: 1%;
+}
+
+.navbar .container {
+    padding: 0;
+}
+
+
+@media (max-width: 991px) { 
+	.menu-item {
+     padding: 0 13px;
+
+	}
+	.logo-wrapper img {
+		width: 60%;
+	}
+	.navbar {
+		background-color: @red;
+	}
+}
+
+
 
 // Secciones
 
@@ -600,7 +621,5 @@ top: 275px;
     top: 247px;
 }
 
-.navbar .container {
-    padding: 0;
-}
+
 
