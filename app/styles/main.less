@@ -57,9 +57,10 @@ p.red{
 
 .bck-green {
 	background-color: @green;
-	margin-right: 305px;
     padding: 5px 10px;
+    margin-top: 20px;
 }
+
 .bck-white {
 	background-color: @white;
 }
@@ -186,8 +187,8 @@ p.red{
 	margin-top: -2px;
 }
 
-.margin-35 {
-margin: 0 350px 20px 0;	
+.mr30 {
+margin-right: 30px;
 }
 
 
@@ -304,11 +305,24 @@ background-color: @red;
 
 @media (max-width: 991px) { 
 	.menu-item {
-     padding: 0 13px;
+     padding: 0 9px;
+     margin-top: 9px;
 
 	}
+
+	.item-down {
+		font-size: 12px;
+	}
+	.item-up {
+		font-size: 11px;
+	}
+
 	.logo-wrapper img {
 		width: 60%;
+	}
+
+	.logo-wrapper {
+	   padding: 1% 0% 0%;
 	}
 	.navbar {
 		background-color: @red;
