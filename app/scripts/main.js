@@ -23,13 +23,13 @@ $(function() {
 $(document).ready(function(){
   var borrarEfecto = function(){
     $('.circulo-efecto').each(function(index, valor){
-      $('.opacidad').css({ opacity: 0.2 });
+      $(valor).next().animate({opacity:0.2}, 1000);
       $(valor).removeClass('circulo-efecto');
       $(valor).addClass('circulo');
     });
 
     $('.circulo-efecto-peque').each(function(index, valor){
-      $('.opacidad').css({ opacity: 0.2 });
+      $(valor).next().animate({opacity:0.2}, 1000);
       $(valor).removeClass('circulo-efecto-peque');
       $(valor).addClass('circulo-peque');
     });
