@@ -5,6 +5,7 @@
 
 // Colores
 @red: #E60F1F;
+@red-dark: #DD1616;
 @green: #66B017;
 @white: #ffffff;
 @black: #000;
@@ -642,7 +643,7 @@ margin: 0 0%;
 .logo-wrapper {
  float: none; 
  padding: 5px 3px;
- background-color: #DD1616;
+ background-color: @red-dark;
 }
 
 .logo-wrapper img {
@@ -658,6 +659,11 @@ text-align: left;
 font-size: 14px;
 text-align: left;
 }
+}
 
+@media (max-width: 980px) { 
+.lateral {
+	display: none;
+}
 }
 
