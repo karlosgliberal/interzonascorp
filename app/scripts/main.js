@@ -42,6 +42,7 @@ $(document).ready(function(){
   }
 
   var sistemaWaypoint = function(id, elemento, peque){
+        console.log('name');
     elemento.waypoint(function(direction) {
       if (direction === 'down') {
         borrarEfecto();
