@@ -1,24 +1,7 @@
 @defaultRadius:80px;
 @defaultHeight:31px;
 @defaultWidth:31px;
-@defaultMargenCirulo: 5px; 
-
-.RoundedShape(@radius:@defaultRadius){
-    -webkit-border-radius:@radius;
-       -moz-border-radius:@radius;
-            border-radius:@radius;  
-}
-
-.Circulos(@height:@defaultHeight,@width:@defaultWidth, @margeCiruclo:@defaultMargenCirulo){
-  background: fade(@white, 50%);
-  height: @height;
-  width: @width;
-  .RoundedShape(@defaultRadius);
-  box-shadow: 
-    inset 0 0 0 @margeCiruclo rgba(0,0,0,0.5), 0 5px 5px rgba(0,0,0,0);
-   -webkit-transform: scale(1);
-  border: 1px solid rgba(255,255,255,0.4);
-}
+@defaultMargenCirculo: 5px; 
 
 // Menu lateral
 .lateral {
@@ -29,6 +12,30 @@
   margin: 1px 25px 0 0;
   background: url("../images/menu-lateral.png") no-repeat 0% -6%;
 }
+// Media menu lateral
+@media (max-width: 980px) { 
+  .lateral {
+    display: none;
+  }
+}
+
+.RoundedShape(@radius:@defaultRadius){
+    -webkit-border-radius:@radius;
+       -moz-border-radius:@radius;
+            border-radius:@radius;  
+}
+
+.Circulos(@height:@defaultHeight, @width:@defaultWidth, @margeCirculo:@defaultMargenCirculo){
+  background: fade(@white, 50%);
+  height: @height;
+  width: @width;
+  .RoundedShape(@defaultRadius);
+  box-shadow: 
+    inset 0 0 0 @margeCirculo rgba(0,0,0,0.5), 0 5px 5px rgba(0,0,0,0);
+   -webkit-transform: scale(1);
+  border: 1px solid rgba(255,255,255,0.4);
+}
+
 
 .circulo-efecto{
   height: 31px;
